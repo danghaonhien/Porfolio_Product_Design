@@ -1,0 +1,130 @@
+@media screen and (max-width: 1200px){
+    header a{
+        font-size: 16px;
+    }
+    nav a.active{
+        font-size: 18px;
+    }
+
+    .banner-wrapper p{
+        font-size: 16px;
+    }
+    .banner-wrapper h6{
+        font-size: 14px;
+    }
+    .btn{
+        font-size: 10px;
+    }
+    .banner-image7{
+        height: 400px;
+    }
+    .banner-image2{
+        height: 400px;
+    }
+    .banner-image{
+        height: 400px;
+    }
+}
+@media screen and (max-width: 768px){
+    .banner-image7{
+        height: auto;
+        padding: 150px 0;
+    }
+    .banner-image8{
+        height: auto;
+        padding: 150px 0;
+    }
+    .banner-image2{
+        height: auto;
+        padding: 150px 0;
+    }
+    .banner-image3{
+        height: auto;
+        padding: 150px 0;
+    }
+    .banner-image4{
+        height: auto;
+        padding: 150px 0;
+    }
+    .banner-image5{
+        height: auto;
+        padding: 150px 0;
+    }
+    .banner-image{
+        height: auto;
+        padding: 150px 0;
+    }
+    .banner-image6{
+        height: auto;
+        padding: 150px 0;
+    }
+}
+@media screen and (max-width: 600px){
+    .open .mobile-menu{
+        width: 100%;
+        padding-top: 35vh;
+    }
+    .mobile-menu li {
+        list-style: none;
+    }
+    header a {
+        font-size: 26px;
+        color: #fff;
+    }
+    .banner-wrapper h6 {
+        font-size: 12px;
+    }
+    .banner-container{
+        padding: 20px;
+    }
+    .banner-container2{
+        padding: 20px;
+    }
+}
+@media screen and (max-width: 488px){
+    .banner-wrapper h1{
+        font-size: 30px;
+        margin-top:20px;
+    }
+    .banner-wrapper p {
+        font-size: 14px;
+        line-height: 20px;
+        margin-bottom: 10px;
+    }
+    .banner-wrapper h6 {
+        font-size: 11px;
+    }
+    .banner-image7{
+        height: auto;
+        padding: 100px 0;
+    }
+    .banner-image8{
+        height: auto;
+        padding: 100px 0;
+    }
+    .banner-image2{
+        height: auto;
+        padding: 100px 0;
+    }
+    .banner-image3{
+        height: auto;
+        padding: 100px 0;
+    }
+    .banner-image4{
+        height: auto;
+        padding: 100px 0;
+    }
+    .banner-image5{
+        height: auto;
+        padding: 100px 0;
+    }
+    .banner-image{
+        height: auto;
+        padding: 100px 0;
+    }
+    .banner-image6{
+        height: auto;
+        padding: 100px 0;
+    }
+
+}
