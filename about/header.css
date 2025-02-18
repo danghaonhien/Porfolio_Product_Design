@@ -92,8 +92,8 @@
   text-align: left;
   gap: 5rem;
   position: absolute;
-  top: 10%;
-left: 20%;
+  top: 18%;
+  left: 20%;
   color: white;
   max-width: 100%;
   grid-template-columns: 1fr 1fr;
@@ -140,9 +140,7 @@ left: 20%;
   .skills {
     margin-top:3rem
   }
-  .text-block article {
-    max-width: 80%;
-  }
+ 
   .off {
     display: none;
   }
@@ -150,8 +148,8 @@ left: 20%;
     display:initial;
   }
   .about {
-    margin-top: 45rem;
-    max-width: 90%;
+    margin-top: 30rem;
+    max-width: 95%;
   }
   .education .description{
     padding-top: 3rem;

@@ -1,0 +1,66 @@
+
+
+@media screen and (max-width: 1200px){
+    header a{
+        font-size: 16px;
+    }
+    nav a.active{
+        font-size: 18px;
+    }
+
+}
+@media screen and (max-width: 1050px){
+    .about {
+        margin-top: 64rem;
+        max-width: 95%;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .about {
+        margin-top:30rem;
+        max-width: 95%;
+    }
+    .open .mobile-menu{
+        width: 100%;
+        padding-top: 35vh;
+    }
+    .mobile-menu li {
+        list-style: none;
+    }
+    header a {
+        font-size: 26px;
+        color: #fff;
+    }
+    .text-block {
+        top: 7%;
+        left: 50%;
+        transform: translate(-50%);
+        width: 90%;
+    }
+    .text-block img{
+        width: 100%;
+        height: auto;
+    }
+    .text-block h4{
+        font-size: 14px;
+    }
+    .text-block article{
+        width: 100%!important;
+    }
+    p{
+        font-size: 14px;
+    }
+    .experiences h2 {
+        margin-left: 5%;
+    }
+    .twocolumntext{
+        margin-left: 5%;
+        max-width: 95%;
+    }
+    .twocolumn {
+        margin-left: 5%;
+    }
+    
+    
+}
