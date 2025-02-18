@@ -8,6 +8,10 @@
         width: 90%;
       
     }
+    .text-block img {
+        width: 100%;
+        height: auto;
+    }
     .twocolumntext {
         margin-left: 0%;
     }
