@@ -1,5 +1,25 @@
 
 
+@media screen and (max-width: 1600px){
+    .text-block {
+
+        left: 50%;
+        transform: translate(-50%);
+        width: 90%;
+      
+    }
+    .twocolumntext {
+        margin-left: 0%;
+    }
+    .experiences h2{
+        margin-left: 0;
+    }
+    .twocolumn{
+        margin-left: 0;
+    }
+
+}
+
 @media screen and (max-width: 1200px){
     header a{
         font-size: 16px;
