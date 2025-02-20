@@ -1,0 +1,88 @@
+.for-phone{
+    display: none;
+}
+
+@media screen and (max-width: 1050px){
+
+    p{
+        font-size: 16px;
+    }
+    .threecolumntext h4{
+        font-size: 18px;
+    }
+    figcaption {
+        font-size: 16px;
+    }
+    .textover h4{
+        font-size: 18px;
+    }
+    .sub_textbox h1{
+        font-size: 18px;
+    }
+    
+}
+
+@media screen and (max-width: 850px){
+    .image-slide {
+        max-width: 80%;
+      
+        padding: 0;
+    }
+    
+    .onecolumntext{
+        margin-top: 20px;
+    }
+    .header__text-box {
+        top:12rem;
+    }
+    .header__text-box{
+     display: none;
+    }
+}
+
+@media screen and (max-width: 650px){
+    .twocolumntext2 button{
+        margin-top: 0;
+    }
+    .text-block img{
+        width: 200px;
+       
+    }
+    .twocolumntext2{
+        margin-top: -10rem;
+    }
+    .for-desktop{
+        display: none;
+    }
+    .for-phone{
+        display: block;
+    }
+    .group-btn{
+        display: flex;
+        width: 100%;
+        margin-top: -10rem;
+
+    }
+    .group-btn a{
+        padding: 10px 25px;
+        font-size: 16px;
+        text-decoration: none;
+        color: #fff;
+        border-radius: 25px;
+        background-color: rgba(83, 56, 158, 0.5);
+        border: solid 2px rgba(83, 56, 158);
+        margin: 0 10px;
+    }
+    .text-block{
+        max-width: 80%;
+        width: 100%;
+    }
+    .onecolumnphoto2 img{
+        max-width: 100%;
+        width: 100%;
+    }
+    .onecolumnphoto2{
+        max-width: 100%;
+    }
+    
+}
