@@ -1,0 +1,72 @@
+.heading-primary--main3{
+    font-size: 4vw;
+}
+.sub_textbox h1{
+    font-size: 3vw;
+}
+.main{
+    width: 90%;
+    margin: 0 auto;
+}
+.wrapper{
+    position: relative;
+}
+.pagination {
+    position: absolute;
+    left: 50%;
+    top: 85%;
+    cursor: pointer;
+    transform: translate(-50%);
+}
+.project-text{
+    width: 50%;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+.project-text h2{
+    font-size: 2vw;
+    margin-bottom: 2rem;
+}
+.project-text h1{
+    -webkit-text-stroke: 1px white;
+        -webkit-text-fill-color: rgba(0, 0, 0, 0.1);
+    font-size: 3.5vw;
+    margin-top: -3rem;
+}
+@media screen and (max-width: 1200px){
+    .sub_textbox {
+
+        margin-top: -20rem;
+        margin-left: -18rem;
+    }
+}
+@media screen and (max-width: 600px){
+    img.image-slide {
+        width: 100px;
+    }
+    .open .mobile-menu{
+        width: 100%;
+        padding-top: 35vh;
+    }
+    .mobile-menu li {
+        list-style: none;
+    }
+    header a {
+        font-size: 26px;
+        color: #fff;
+    }
+ 
+    .project-text h1{
+        font-size: 40px;
+    }
+    .project-text h2{
+        font-size: 20px;
+    }
+    .pagination{
+        top: 60%;
+    }
+    .project-text{
+        width: 95%;
+    }
+
+}    

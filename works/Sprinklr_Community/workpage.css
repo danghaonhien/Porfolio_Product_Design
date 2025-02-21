@@ -16,7 +16,7 @@
 @media screen and (max-width: 75em) {
     .codi-container {
       max-width: 100%;
-      overflow: hidden;
+      
       max-height: 100vh;
     }
   }
