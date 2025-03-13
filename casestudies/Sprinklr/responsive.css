@@ -6,7 +6,9 @@
    margin: 0 auto;
  
   }
-
+.center-pra {
+    text-align: left;
+}
 @media screen and (max-width: 1650px){
     .heading-primary--sub3{
         font-size: 2.5vw;
@@ -101,17 +103,20 @@
         padding-bottom: 50px;
     }
     .container {
-        width: 95%!important;
+        width: 85%!important;
         margin: 0 auto;
     }
+
     .heading-primary--sub3 {
         font-size: 35px;
         margin-top: -6rem;
         text-align: center;
     }
+
     .button {
         width: 66%;
         margin: 0 auto;
+        margin-top: 2rem;
     }
     .sub_textbox2 h1{
         font-size: 30px;
@@ -119,5 +124,15 @@
     .twocolumntext3{
         grid-template-columns:1fr;
         gap:5rem;
+    }
+    .twocolumntext2{
+        grid-template-columns:1fr;
+        gap:5rem;
+        text-align: center;
+    }
+    .threecolumntext3{
+        grid-template-columns:1fr;
+        gap:5rem;
+        text-align: center;
     }
 }

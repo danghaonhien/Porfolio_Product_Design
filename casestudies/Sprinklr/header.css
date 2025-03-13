@@ -146,6 +146,9 @@ figcaption {
   .cover-container{
    margin-bottom: 40rem;
   }
+  .hero-image {
+   margin: 0 auto
+  }
 }
 
 
@@ -166,12 +169,15 @@ justify-content: center;
 
 .textover figcaption {
 letter-spacing: .2rem;
-  max-width: 80%;
-margin-top: 15rem;
+  max-width: 100%;
+/* margin-top: 15rem; */
 /* margin-left: 15%; */
   text-align: left;
 }
-
+.frame {
+ padding: 5rem;
+  background-color: rgba(17, 138, 203,0.1) ;
+}
 @media screen and (max-width: 75em) {
   .textover {
 margin-top: -5rem;
@@ -206,7 +212,9 @@ margin-top: -5rem;
   color: #38FE13;
 }
 
-
+.turnBlue {
+  color: rgba(17, 138, 203);
+}
 
 
 
@@ -245,7 +253,7 @@ ol {
 .threecolumntext {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr ;
-  margin-top: 10rem;
+  margin-top: 5rem;
   /* margin-left: 15%; */
   text-align: left;
 gap:5rem;
@@ -256,7 +264,7 @@ max-width: 100%;
 .fivecolumntext {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
-
+margin-top: 5rem;
   /* margin-left: 15%; */
   text-align: left;
 gap:2rem;
@@ -274,6 +282,17 @@ max-width: 100%;
   text-align: left;
   gap:5rem;
   padding-right: 5rem;
+  max-width: 100%;
+}
+.threecolumntext3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr ;
+  /* margin-top: 10rem; */
+  /* margin-left: 15%; */
+  text-align: left;
+  /* margin: 0 auto; */
+  gap:10rem;
+  /* padding-right: 5rem; */
   max-width: 100%;
 }
 /* .threecolumntext2 img {
@@ -300,6 +319,7 @@ font-size: 1.25rem;
    grid-template-columns: 1fr;
 font-size: 1.25rem;
   }
+
   .threecolumntext h4 {
 font-size: 1.25rem;
 
@@ -334,12 +354,17 @@ max-width: 100%;
 }
 
 /* Design Strategy */
+.hero-image {
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+}
 .titletext {
   display: grid;
 
   max-width: 100%;
-  gap: 5rem;
+  /* gap: 5rem; */
   margin-top: 15rem;
+  margin-bottom: 15rem;
   /* margin-top: 5rem; */
   /* margin-left: 15%; */
 }
@@ -348,7 +373,7 @@ max-width: 100%;
   text-align: left;
   max-width: 100%;
   /* gap: 5rem; */
-  /* margin-top: 5rem; */
+  margin-top: 2rem;
   /* margin-left: 15%; */
 }
 
@@ -373,21 +398,21 @@ margin-top: 10rem;
   text-align: left;
   max-width: 100%;
   /* margin-top: 5rem; */
-margin-top: 5rem;
+/* margin-top: 5rem; */
   /* margin-left: 15%; */
 }
 .onecolumnphoto3 {
   display: grid;
   text-align: left;
   max-width: 100%;
-  margin-top: 5rem;
+  margin-top: 2rem;
   gap: .5rem;
 }
 .onecolumnphoto4 {
   display: grid;
   text-align: left;
   max-width: 100%;
-  margin-top: 5rem;
+  margin-top: 2rem;
   gap: .5rem;
 }
 .onecolumnphoto2 img {
@@ -412,7 +437,7 @@ max-width: 25rem;
   text-align: left;
   max-width: 100%;
   /* margin-top: 5rem; */
-margin-top: 10rem;
+margin-top: 2rem;
   /* margin-left: 15%; */
 
 }
@@ -426,7 +451,7 @@ max-width: 100%;
   max-width: 100%;
 }
 .twocolumntext {
-  margin-top: 10rem;
+  margin-top: 2rem;
 display: grid;
 grid-template-columns: 1fr 1fr;
 max-width: 100%;
@@ -439,6 +464,7 @@ gap: 10rem;
   max-width: 100%;
   height: auto;
   }
+
 .twocolumntext3 {
 
 display: grid;
@@ -452,9 +478,9 @@ gap: 10rem;
 
 .twocolumntext2 {
 
-grid-template-columns: 1fr 2fr;
+grid-template-columns: 1fr 3fr;
 display: grid;
-grid-template-columns: 1fr 1fr;
+
 max-width: 100%;
 text-align: left;
 gap: 10rem;
@@ -512,11 +538,16 @@ max-width: 100%;
 
 /* Button */
 
-
+.button-container {
+  column-count: 1;
+/* column-gap: 15rem; */
+margin: 0 auto;
+/* align-self: center; */
+}
 .button {
-  background-color: rgba(17, 138, 203,0.5);
+  background-color: rgba(17, 138, 203);
   border: solid 2px rgba(17, 138, 203);
-  width: 24rem;
+  width: 10rem;
   color: white;
   padding: 1rem 3rem;
   text-align: center;
@@ -525,8 +556,11 @@ max-width: 100%;
   font-size:1.5rem;
   border-radius: 30px;
   cursor: pointer;
+  /* margin-top: 2rem; */
 }
 .button :hover{
+  background-color: rgba(17, 138, 203,0.5);
+  border: solid 2px rgba(17, 138, 203);
   color: white;
 font-weight: 600;
 }
@@ -543,13 +577,13 @@ font-weight: 600;
     margin-top: 15rem;
     padding: 2rem;
   }
-  .button {
+  /* .button {
     width: 10rem;
     padding: 1.5rem 5rem;
     display: inline-block;
     font-size: 1.75rem;
     
-  }
+  } */
 }
 
 /* On screens that are less than 700px wide, make the sidebar into a topbar */
@@ -607,13 +641,15 @@ height: auto;
 }
 
 .heading-primary--sub3 {
-  color: rgba(17, 138, 203);
-  margin-left: .25rem;
+  /* color: rgba(17, 138, 203); */
+  /* margin-left: .25rem; */
   display: block;
   font-size: 3vw;
   font-weight: 600;
-  letter-spacing: 1rem;
+  /* text-align: center; */
+  letter-spacing: .1rem;
   /* animation: moveInRight 2.5s ease-out; */
+  text-align: left;
 }
 
 
@@ -670,9 +706,14 @@ height: auto;
     display: grid;
     grid-template-columns: 1fr;
   }
-  .twocolumntext2 button {
+  /* .twocolumntext2 button {
     margin-top: 20rem;
-  }
+  } */
+  .button-container {
+    margin: 0 auto;
+
+
+}
 }
 
 /* Scroll */

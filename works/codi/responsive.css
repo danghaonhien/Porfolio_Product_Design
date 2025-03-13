@@ -19,16 +19,16 @@
     transform: translate(-50%);
 }
 .project-text{
-    padding-top: 100px;
+    align-items: center;
 }
 .project-text h2{
-    font-size: 2vw;
+    font-size: 4vw;
     margin-bottom: 2rem;
 }
 .project-text h1{
     -webkit-text-stroke: 1px white;
         -webkit-text-fill-color: rgba(0, 0, 0, 0.1);
-    font-size: 3.5vw;
+    font-size: 6vw;
     margin-top: -3rem;
 }
 @media screen and (max-width: 1200px){
@@ -61,7 +61,11 @@
         font-size: 20px;
     }
     .pagination{
-        top: 60%;
+        top: 65%;
     }
-
+    .project-text{
+        width: 95%;
+        margin: 0 auto;
+        padding-top: 100px;
+    }
 }    

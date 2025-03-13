@@ -271,7 +271,20 @@
   transition: all 0.3s ease;
 }
 .button {
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgb(56, 254, 19);
+  border: solid 2px rgb(56, 254, 19);
+  width: 8rem;
+  color: white;
+  padding: 1rem 3rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.5rem;
+  border-radius: 30px;
+  cursor: pointer;
+}
+.button:hover {
+  background-color: rgba(56, 254, 19,.5);
   border: solid 2px rgb(56, 254, 19);
   width: 8rem;
   color: white;
@@ -285,7 +298,7 @@
 }
 .button a {
   text-decoration: none;
-  color: white;
+  color: black;
 }
 
 @media screen and (max-width: 75em) {

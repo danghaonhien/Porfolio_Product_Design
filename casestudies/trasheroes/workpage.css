@@ -1,45 +1,28 @@
 
-  .wrapper{
-    background-image: url(../../images/Trasheroes/background.png);
-    background-color: black;
-    /* height:100%; */
-   max-width:100%;
-   background-size: cover;
-   z-index: -1;
-   margin: auto;
-  }
-  .wrapper2 {
-    max-width: 90%;
-    margin: auto;
-  }
-  
-@media screen and (max-width: 75em) {
+.wrapper{
+  background-image: url(../../images/Codi/casestudy/Background.png);
+  background-color: black;
+  /* height:100%; */
+ max-width:100%;
+ background-size: cover;
+ z-index: -1;
+ margin: auto;
+}
 .wrapper2 {
-      max-width: 100%;
-      overflow: hidden;
-      align-content: center;
-      justify-content: center;
-      text-align: center;
-    }
+  max-width: 90%;
+  margin: auto;
+}
+
+@media screen and (max-width: 75em) {
+  .wrapper2 {
+    max-width: 100%;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+ 
   }
 
+}
 
-  @media screen and (min-width: 1400px) {
-    .cover-container {
-      max-width: 100%;
-      overflow: hidden;
-    }
-  }
-  @media screen and (min-width: 1600px) {
-    .cover-container {
-      max-width: 100%;
-    }
-  }
-  @media screen and (min-width: 1900px) {
-    .cover-container {
-      max-width: 100%;
-    }
-  }
-  
 
-  
+

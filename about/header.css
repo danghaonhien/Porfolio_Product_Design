@@ -93,7 +93,7 @@
   gap: 5rem;
   position: absolute;
   top: 18%;
-  left: 20%;
+  /* left: 20%; */
   color: white;
   max-width: 100%;
   grid-template-columns: 1fr 1fr;
@@ -148,7 +148,7 @@
     display:initial;
   }
   .about {
-    margin-top: 30rem;
+    /* margin-top: 30rem; */
     max-width: 95%;
   }
   .education .description{
@@ -185,14 +185,17 @@
   letter-spacing: 0.25rem;
   line-height: 2;
 }
-
+.caption a {
+  text-decoration: none;
+  color: white;
+  }
 h2 {
   color: #ff4f0d;
 }
 .experiences h2 {
   text-align: left;
-  margin-left: 15%;
-  margin-top: 5rem;
+  /* margin-left: 15%; */
+  /* margin-top: 5rem; */
 }
 
 @media screen and (max-width: 75em) {
@@ -309,7 +312,7 @@ h2 {
   grid-template-columns: 1fr 1fr;
   max-width: 100%;
   text-align: left;
-  margin-left: 15%;
+  /* margin-left: 15%; */
 }
 .twocolumntext h1 {
   font-size: 5rem;
@@ -486,7 +489,7 @@ ul {
   max-width: 100%;
   justify-content: space-between;
   text-align: left;
-  margin-left: 15%;
+  /* margin-left: 15%; */
 }
 
 @media screen and (max-width: 75em) {

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VND to USD Converter</title>
+  <style>
+    /* Dark mode base styling */
+    body {
+      background-color: #121212;
+      color: #e0e0e0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    /* Container styling with neon effects */
+    .container {
+      background-color: #1e1e1e;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
+      text-align: center;
+      max-width: 400px;
+      width: 90%;
+    }
+
+    h1 {
+      color: #39ff14; /* Neon green */
+      margin-bottom: 1rem;
+    }
+
+    p {
+      margin-bottom: 1rem;
+    }
+
+    input[type="number"] {
+      background-color: #2e2e2e;
+      border: none;
+      padding: 0.5rem;
+      width: 80%;
+      margin-bottom: 1rem;
+      font-size: 1rem;
+      color: #e0e0e0;
+      border-radius: 5px;
+      outline: none;
+    }
+
+    button {
+      background-color: #39ff14;
+      color: #121212;
+      border: none;
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #2ecc71;
+    }
+
+    .result {
+      margin-top: 1rem;
+      font-size: 1.2rem;
+      color: #0ff; /* Neon cyan */
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Currency Converter</h1>
+    <p>Convert Vietnamese Dong (VND) to US Dollar (USD)</p>
+    <input type="number" id="vndInput" placeholder="Enter amount in VND" />
+    <br />
+    <button id="convertButton">Convert</button>
+    <div class="result" id="result"></div>
+  </div>
+
+  <script>
+    // Add event listener to the convert button
+    document.getElementById('convertButton').addEventListener('click', function() {
+      var vndAmount = parseFloat(document.getElementById('vndInput').value);
+      if (isNaN(vndAmount)) {
+        alert('Please enter a valid number');
+        return;
+      }
+      
+      // Fetch the live exchange rate for VND from the API
+      fetch('https://open.er-api.com/v6/latest/VND')
+        .then(function(response) {
+          return response.json();
+        })
+        .then(function(data) {
+          // Ensure the API call is successful and the rate exists
+          if (data.result === "success" && data.rates && data.rates.USD) {
+            var rate = data.rates.USD;
+            var usdAmount = vndAmount * rate;
+            document.getElementById('result').innerText = usdAmount.toFixed(2) + " USD";
+          } else {
+            alert("Error retrieving exchange rate. Please try again later.");
+          }
+        })
+        .catch(function(error) {
+          console.error('Error:', error);
+          alert("Error retrieving exchange rate. Please check your internet connection.");
+        });
+    });
+  </script>
+</body>
+</html>

@@ -127,20 +127,22 @@
     gap: 2rem;
   }
 }
+
 .heading-primary--main {
   display: block;
-  font-size: 7vw;
+  font-size: 8vw;
   font-weight: 800;
-  -webkit-text-stroke: 3px rgba(17, 138, 203);
+  -webkit-text-stroke: 5px rgba(17, 138, 203);
   -webkit-text-fill-color: rgba(0, 0, 0, 0.1);
   letter-spacing: 1rem;
   animation-name: moveInLeft;
   animation-duration: 2.5s;
   animation-timing-function: ease-out;
 }
+
 .heading-primary--main3 {
   display: block;
-  font-size: 6vw;
+  font-size: 8vw;
   font-weight: 800;
   -webkit-text-stroke: 3px white;
   -webkit-text-fill-color: rgba(0, 0, 0, 0.1);
@@ -155,7 +157,7 @@
   .heading-primary--main {
     font-size: 7rem;
     margin-left: 1rem;
-    -webkit-text-stroke: 1px #bb1c00;
+    -webkit-text-stroke: 1px      rgb(23, 173, 253);;;
     -webkit-text-fill-color: rgba(0, 0, 0, 0.1);
   }
   .heading-primary--main2 {
@@ -275,6 +277,19 @@
  
 }
 .button {
+  background-color: rgba(17, 138, 203);
+  border: solid 2px  rgba(17, 138, 203);
+  width: 8rem;
+  color: white;
+  padding: 1rem 3rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.5rem;
+  border-radius: 30px;
+  cursor: pointer;
+}
+.button:hover {
   background-color: rgba(17, 138, 203,0.5);
   border: solid 2px  rgba(17, 138, 203);
   width: 8rem;
